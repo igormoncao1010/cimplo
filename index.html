@@ -22,6 +22,7 @@
     <meta name="twitter:image" content="https://cimplo.vercel.app/assets/og-image.png">
     <link rel="preload" href="logo.svg" as="image">
     <link rel="preload" href="assets/cimplo-hero.png" as="image">
+    <link rel="preload" href="assets/cimplo-hero-mobile.jpg" as="image" media="(max-width: 880px)">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -39,7 +40,10 @@
 
     <main id="inicio">
       <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-image" src="assets/cimplo-hero.png" alt="Ambiente moderno de clínica odontológica com atendimento acolhedor">
+        <picture class="hero-picture">
+          <source media="(max-width: 880px)" srcset="assets/cimplo-hero-mobile.jpg">
+          <img class="hero-image" src="assets/cimplo-hero.png" alt="Ambiente moderno de clínica odontológica com atendimento acolhedor">
+        </picture>
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
           <div class="hero-copy">
